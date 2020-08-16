@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	
+	var Mobile = function(model_no){
+		this.model = model_no;
+		this.price = 3000;
+	};
+	
+	var samsung = new Mobile("Galaxy");
+	var nokia =new Mobile("3310");
+	
+	// classname.prototype.key = "value";
+	Mobile.prototype.color = "white";
+	document.write(samsung.color);
+	
+	console.log(samsung);
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	 
+	function Mobile(model_no){
+		this.model = model_no;
+		this.color = "white";
+		this.ram = "4gb";
+		this.price = function(){
+			document.write(this.model + " Price Rs.3000 <br>");
+		};
+	}
+	var samsung = new Mobile ("Galaxy");
+	var nokia = new Mobile("3310");
+	
+	for (var specs in nokia){
+		if(typeof nokia[specs] !== "function")
+		document.write(specs + " "+ nokia[specs] + "<br>");
+	}
+	 
+	</script>
+</body>
+</html>

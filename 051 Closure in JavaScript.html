@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	
+	
+	function show(){
+		var j = "j a local vari of outer function";
+		document.write(j + "<br>");
+		function innerFun(){
+			var k = "K a local vari of inner function"
+			document.write(k + "<br>");
+			document.write(j + "<br>");
+		}
+		innerFun();
+	}
+	show();
+	</script>
+</body>
+</html>

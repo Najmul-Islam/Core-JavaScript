@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	// Super Class
+	var Mobile = function(){
+		this.a = 10;
+	}
+	
+	// Prototype Property of Mobile
+	Mobile.prototype.z = 30;
+	
+	// Sub Class
+	var Samsung = function(){
+		// It calls Super class constructor and initialize property without this you can not access super class property using sub class object
+		Mobile.call(this);
+		this.b = 20;
+	}
+	
+	var Galaxy = function(){
+		Samsung.call(this);
+		this.c = 100;
+	}
+	// Prototype Inheritance
+	Samsung.prototype = Object.create(Mobile.prototype);
+	Samsung.prototype.constructor = Samsung;
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	
+	function Mobile(model_no){
+		this.model = model_no;
+		//this.memory = 4;
+	}
+	
+	var samsung = new Mobile("Galaxy");
+	var nokia = new Mobile ("3310");
+	
+	if(nokia.hasOwnProperty("memory")){
+		document.write("Available");
+	}else{
+		document.write("Doesnt Exist");
+	}
+	
+	</script>
+</body>
+</html>

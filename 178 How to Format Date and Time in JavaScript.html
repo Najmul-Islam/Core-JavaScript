@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	var tarikh = new Date();
+	var month = tarikh.getMonth();
+	var day = tarikh.getDay();
+	document.write(getMonthName(month) + "<br>");
+	//document.write(getDayName(day) + "<br>");
+	
+	function getMonthName(monthnumber){
+		var monthname = ["Jan", "Feb", "March", "Apr", "May", "june", "july", "Aug", "Sep", "Oct", "Nov", "Dec"];
+		
+		return monthname[monthnumber];
+	}
+	
+	</script>
+</body>
+</html>

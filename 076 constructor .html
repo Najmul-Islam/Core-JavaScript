@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	
+	function Mobile(model_no){
+		this.model= model_no;
+		this.price = function(){
+			document.write(this.model + " Price Rs. 3000");
+		};
+	}
+	
+	var samsung = new Mobile("Galaxy");
+	var lg = new Mobile("3310");
+	samsung.price();
+	lg.price();
+	
+	</script>
+</body>
+</html>

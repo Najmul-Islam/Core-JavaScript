@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+		//Class Declaration
+		
+		class Mobile {
+			constructor(model_no, color){
+				this.model = model_no;
+				this.clr = color;
+			}
+			show(){
+				return this.model + " Price Rs. 3000 " + this.clr;
+			}
+		}
+		
+		var nokia = new Mobile("Galaxy" , "White");
+		document.write(nokia.show());
+	</script>
+</body>
+</html>

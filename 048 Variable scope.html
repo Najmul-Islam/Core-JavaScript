@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	
+	
+	
+	<script type="text/javascript"> 
+	/*var i = "I am global variable";
+	
+	function show(){
+		document.write(i + "<br>");
+	}
+	show();
+	
+	document.write(i + "<br>");
+	
+	function display(){
+		document.write(i + "<br>");
+	}
+	display();
+	
+	if(true){
+		document.write(i + "<br>");
+	}*/
+	
+	
+	
+	/*function show(){
+		j = "I am global variable inside function";
+		document.write(j + "<br>");
+	}
+	show();
+	
+	
+	if(true){
+	document.write(j + "<br>");
+	} */
+	
+	
+	function show(){
+		//Local varibale
+		var j = "J a local variable of outer function"
+		document.write(j + "<br>");
+		
+		function innerFun(){
+			var k = "K a local variable of Inner function";
+			document.write(k + "<br>");
+			document.write(j + "<br>");
+		}
+		innerFun();
+		document.write(k + "<br>");
+	}
+	show();
+	
+	</script>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
